@@ -40,7 +40,7 @@ mv ./projects/go/bin/cjdcmd-ng ./projects/go/bin/cjdcmd
 # Generate config / clean config json
 echo 'Generate clean JSON config'
 cjdroute --genconf > /etc/cjdroute.config
-cjdroute --cleanconf > /etc/cjdroute.config > /etc/cjdroute.conf
+cjdroute --cleanconf < /etc/cjdroute.config > /etc/cjdroute.conf
 rm -rf /etc/cjdroute.config
 
 # Link config with cjdcmd
