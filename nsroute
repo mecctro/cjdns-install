@@ -11,22 +11,6 @@
 # cjdns git repo:    https://github.com/cjdelisle/cjdns/blob/a7350a4d6ec064f71eeb026dd4a83b235b299512/README.md
 ### END INIT INFO
 
-
-#### NOTES:
-# service nsroute (start|stop|restart|status|flush|update|install|delete)
-#
-# Install cjdns (download nsroute) 
-# Run in terminal:
-# mv /path/to/script/nsroute /etc/init.d/nsroute
-# chmod +x /etc/init.d/nsroute
-# update-rc.d nsroute defaults
-# service nsroute install
-#
-# Add peers when prompted (optional) and save. 
-# To start cjdns:
-# service nsroute start
-####
-
 PROG="cjdroute"
 PROC="cjdroute"
 GIT_PATH="/opt/cjdns"
