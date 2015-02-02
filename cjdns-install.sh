@@ -35,6 +35,7 @@ echo 'export PATH=$PATH:$HOME/projects/go/bin' >> ~/.bashrc
 echo 'Install cjdcmd-ng'
 apt-get install go -y
 go get github.com/ehmry/cjdcmd-ng
+mv ./projects/go/bin/cjdcmd-ng ./projects/go/bin/cjdcmd
 
 # Generate config / clean config json
 echo 'Generate clean JSON config'
