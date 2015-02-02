@@ -17,7 +17,7 @@ chmod +x /etc/init.d/nsroute
 update-rc.d nsroute defaults
 service nsroute install
 mkdir /var/log/cjdns
-echo '' >> /var/log/cjdns/cjdns.logvv
+echo '' >> /var/log/cjdns/cjdns.log
 
 # Correct PATH and prep for go installation
 mkdir -p $HOME/projects/go
