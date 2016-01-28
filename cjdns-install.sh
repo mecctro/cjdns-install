@@ -50,6 +50,10 @@ rm -rf /etc/cjdroute.config
 echo 'Link cjdcmd-ng to generated configuration'
 cjdcmd cjdnsadmin --file=/etc/cjdroute.conf
 
+# Install nodejs for cjdns "tools"
+curl -sL https://deb.nodesource.com/setup_5.x | bash -
+apt-get install -y nodejs
+
 # Setup CRON for auto-updates (check once daily @ 12 PM)
 echo 'Setup automatic updates'
 echo '0 0 * * * root /etc/init.d/nsroute 2>&1 >> /var/log/cjdns/cjdns.log' >> /etc/cron.d/cjdns
