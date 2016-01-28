@@ -48,6 +48,7 @@ start() {
          echo "Cjdns isn't running."
      else
          echo "Killing cjdns"
+         kill `cat /var/run/cjdns-.pid`;
          kill `cat /var/run/cjdns-angel.pid`;
          kill `cat /var/run/cjdns-core.pid`;
      fi
