@@ -1,8 +1,10 @@
 # cjdns-install
-Installation scripts for [cjdns](https://github.com/cjdelisle/cjdns)
+Installation script for [cjdns](https://github.com/cjdelisle/cjdns)
 
 ##Created for Debian 7 (Wheezy)
 Not intended for other distributions.
+
+**Note:** This is experimental, don't rely on it.
 
 Usage
 -----
