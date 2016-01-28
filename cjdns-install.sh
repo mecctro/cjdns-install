@@ -43,6 +43,9 @@ cjdroute --genconf > /etc/cjdroute.config
 cjdroute --cleanconf < /etc/cjdroute.config > /etc/cjdroute.conf
 rm -rf /etc/cjdroute.config
 
+# Generate generic admin config file
+/opt/cjdns/contrib/python/cjdnsadminmaker.py ~/.cjdnsadmin
+
 # Link config with cjdcmd
 echo 'Link cjdcmd-ng to generated configuration'
 cjdcmd cjdnsadmin --file=/etc/cjdroute.conf
