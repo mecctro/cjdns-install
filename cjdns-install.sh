@@ -51,6 +51,7 @@ echo 'Link cjdcmd-ng to generated configuration'
 cjdcmd cjdnsadmin --file=/etc/cjdroute.conf
 
 # Install nodejs for cjdns "tools"
+apt-get install curl -y
 curl -sL https://deb.nodesource.com/setup_5.x | bash -
 apt-get install -y nodejs
 
